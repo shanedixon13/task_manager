@@ -1,6 +1,14 @@
+<link
+    rel="stylesheet"
+    href="{{url_for('static', filename='css/about.css')}}"
+/>
+
+
 {% extends 'base.html' %} {% block title %}About {{ user["first_name"]}} {%
 endblock title %} {% block content %}
+<div class="card">
 <h1>About: {{ user["first_name"]}} {{user["last_name"]}}</h1>
 <p>{{ user["first_name"]}} is a {{user["bio"]}}</p>
+</div>
 
 {% endblock content %}

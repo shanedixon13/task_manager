@@ -15,8 +15,8 @@ def create_task(name, body, priority):
 
 
 if __name__=="__main__":
-    task_name=input("Task name?")
-    task_body=input("Task body?")
+    task_name=input("Task name? ")
+    task_body=input("Task body? ")
     task_priority=input("Task priority? [1-5]")
     create_task(task_name, task_body, task_priority)
     print("Tasks:")

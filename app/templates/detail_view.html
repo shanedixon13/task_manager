@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Task{% endblock title %} 
+
+
+{% block content %}
+<div class="card" style="text-align: center; width:fit-content;">
+    <div class="card-body">
+        <h1>{{task.name}}</h1>
+        <p>{{task.body}}</p>
+    </div>
+</div>
+{% endblock content %}
